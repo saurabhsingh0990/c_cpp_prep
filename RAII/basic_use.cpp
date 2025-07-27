@@ -46,7 +46,7 @@ class Raii{
         void print(){
             if (ptr)
                 cout << *ptr << endl;
-            else cout << "ptr is pointing to null";
+            else cout << "ptr is pointing to null"<< endl;
         }
 
         ~Raii() {
@@ -60,14 +60,30 @@ class Raii{
 
 template<typename T>
 void print(Raii<T>& obj){
-    cout << "value 1 : ";
+    cout << "value : ";
     obj.print();
     cout << "it is stored at loaction" << obj.get() << endl;
 }
 
 int main(){
-    Raii int1 (new int(7));
+    Raii<int> int1 (new int(7));
+    cout << "int1 ";
     print(int1);
-    
+    Raii<string> name (new string("saurabh"));
+    print(name);
+
+    Raii<int> int2;
+    cout << "move assignment operator " << endl;
+    int2 = move(int1); // move assignment operator 
+    cout << "int2 ";
+    print(int2);
+    cout << "int1 ";
+    print(int1);
+    cout << "move constructor " << endl;
+    Raii<int> int3 = move(int2); // move constructor 
+    cout << "int3 ";
+    print(int3);
+    cout << "int2 ";
+    print(int2);
     return 0;
 }
