@@ -1,3 +1,6 @@
+
+// these are some bacis string operation 
+// implmenting string class with these opeartions in implementation file 
 #include <string>
 #include <iostream>
 using namespace std;
@@ -9,7 +12,7 @@ int main(){
     string newName;
     newName = fullName; // copy assignment;
     string newFirstName = firstName; // copy constructor;
-    cout << fullName.length();
-    cout << fullName;
+    cout << fullName.length() << endl;
+    cout << fullName << endl;
     return 0;
 }
