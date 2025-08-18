@@ -1,9 +1,10 @@
-# ignore complied binaries / executables 
-*.exe
-*.exec
-
-# Ignore all files in all folders except those with .cpp/.c or .h extension
+# Ignore all files
 *
+
+# But NOT source/header files, in any directory
 !*.cpp
 !*.c
 !*.h
+!*/.cpp
+!*/.c
+!*/.h
