@@ -1,10 +1,11 @@
 # Ignore all files
 *
 
-# But NOT source/header files, in any directory
+# Do NOT ignore these everywhere (root and subfolders)
 !*.cpp
 !*.c
 !*.h
-!*/.cpp
-!*/.c
-!*/.h
+!/**/*.cpp
+!/**/*.c
+!/**/*.h
+ß
