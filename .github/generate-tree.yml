@@ -2,7 +2,7 @@ name: Generate File Tree
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ master ]  # Changed from 'main' to 'master'
   workflow_dispatch:
 
 permissions:
@@ -16,7 +16,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
     
-    - name: Generate file tree JSON
+    - name: Generate file tree JSON and save to docs folder
       run: |
         python3 -c "
         import os
@@ -26,7 +26,7 @@ jobs:
             tree = {}
             try:
                 for item in sorted(os.listdir(directory)):
-                    if item.startswith('.') or item in ['fileTree.json', 'README.md', 'index.html', 'styles.css', 'script.js']:
+                    if item.startswith('.') or item in ['docs', 'fileTree.json', 'README.md']:
                         continue
                         
                     item_path = os.path.join(directory, item)
@@ -40,14 +40,14 @@ jobs:
                         tree[item] = {
                             'type': 'file',
                             'path': item_path,
-                            'extension': os.path.splitext(item)[21][1:] if '.' in item else ''
+                            'extension': os.path.splitext(item)[1][1:] if '.' in item else ''
                         }
             except PermissionError:
                 pass
             return tree
         
         file_tree = build_tree('.')
-        with open('fileTree.json', 'w') as f:
+        with open('docs/fileTree.json', 'w') as f:
             json.dump(file_tree, f, indent=2)
         "
     
@@ -55,7 +55,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add fileTree.json
+        git add docs/fileTree.json
         if ! git diff --staged --quiet; then
           git commit -m "Auto-update file tree [skip ci]"
           git push
