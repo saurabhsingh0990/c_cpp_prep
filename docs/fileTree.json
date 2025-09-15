@@ -1,0 +1,312 @@
+{
+  "Constructors": {
+    "type": "folder",
+    "children": {
+      "basic_types": {
+        "type": "file",
+        "path": "Constructors/basic_types",
+        "extension": ""
+      },
+      "basic_types.cpp": {
+        "type": "file",
+        "path": "Constructors/basic_types.cpp",
+        "extension": "cpp"
+      }
+    }
+  },
+  "cpp_template": {
+    "type": "folder",
+    "children": {
+      "basic_use.cpp": {
+        "type": "file",
+        "path": "cpp_template/basic_use.cpp",
+        "extension": "cpp"
+      }
+    }
+  },
+  "diamond_problem": {
+    "type": "folder",
+    "children": {
+      "problem": {
+        "type": "file",
+        "path": "diamond_problem/problem",
+        "extension": ""
+      },
+      "problem.cpp": {
+        "type": "file",
+        "path": "diamond_problem/problem.cpp",
+        "extension": "cpp"
+      },
+      "solution": {
+        "type": "file",
+        "path": "diamond_problem/solution",
+        "extension": ""
+      },
+      "solution.cpp": {
+        "type": "file",
+        "path": "diamond_problem/solution.cpp",
+        "extension": "cpp"
+      }
+    }
+  },
+  "friend": {
+    "type": "folder",
+    "children": {
+      "friendClass.cpp": {
+        "type": "file",
+        "path": "friend/friendClass.cpp",
+        "extension": "cpp"
+      },
+      "friendFunction.cpp": {
+        "type": "file",
+        "path": "friend/friendFunction.cpp",
+        "extension": "cpp"
+      }
+    }
+  },
+  "inheritance": {
+    "type": "folder",
+    "children": {
+      "allModes.cpp": {
+        "type": "file",
+        "path": "inheritance/allModes.cpp",
+        "extension": "cpp"
+      },
+      "types": {
+        "type": "folder",
+        "children": {
+          "Hierarchical": {
+            "type": "file",
+            "path": "inheritance/types/Hierarchical",
+            "extension": ""
+          },
+          "Hierarchical.cpp": {
+            "type": "file",
+            "path": "inheritance/types/Hierarchical.cpp",
+            "extension": "cpp"
+          },
+          "miltilevel.cpp": {
+            "type": "file",
+            "path": "inheritance/types/miltilevel.cpp",
+            "extension": "cpp"
+          },
+          "multiple.cpp": {
+            "type": "file",
+            "path": "inheritance/types/multiple.cpp",
+            "extension": "cpp"
+          },
+          "single.cpp": {
+            "type": "file",
+            "path": "inheritance/types/single.cpp",
+            "extension": "cpp"
+          }
+        }
+      }
+    }
+  },
+  "lValue_rValue": {
+    "type": "folder",
+    "children": {
+      "basic_use.cpp": {
+        "type": "file",
+        "path": "lValue_rValue/basic_use.cpp",
+        "extension": "cpp"
+      }
+    }
+  },
+  "move": {
+    "type": "folder",
+    "children": {
+      "basic_use.cpp": {
+        "type": "file",
+        "path": "move/basic_use.cpp",
+        "extension": "cpp"
+      }
+    }
+  },
+  "namespace": {
+    "type": "folder",
+    "children": {
+      "basic_use.cpp": {
+        "type": "file",
+        "path": "namespace/basic_use.cpp",
+        "extension": "cpp"
+      },
+      "nested_ns.cpp": {
+        "type": "file",
+        "path": "namespace/nested_ns.cpp",
+        "extension": "cpp"
+      },
+      "whyDontUse.cpp": {
+        "type": "file",
+        "path": "namespace/whyDontUse.cpp",
+        "extension": "cpp"
+      }
+    }
+  },
+  "overloading": {
+    "type": "folder",
+    "children": {
+      "function_overloading.cpp": {
+        "type": "file",
+        "path": "overloading/function_overloading.cpp",
+        "extension": "cpp"
+      },
+      "Operator_overloading": {
+        "type": "folder",
+        "children": {
+          "binary.cpp": {
+            "type": "file",
+            "path": "overloading/Operator_overloading/binary.cpp",
+            "extension": "cpp"
+          },
+          "uniary.cpp": {
+            "type": "file",
+            "path": "overloading/Operator_overloading/uniary.cpp",
+            "extension": "cpp"
+          }
+        }
+      }
+    }
+  },
+  "pointers": {
+    "type": "folder",
+    "children": {
+      "smartPointers": {
+        "type": "folder",
+        "children": {
+          "sharedPtr": {
+            "type": "folder",
+            "children": {
+              "basic_use.cpp": {
+                "type": "file",
+                "path": "pointers/smartPointers/sharedPtr/basic_use.cpp",
+                "extension": "cpp"
+              },
+              "implementation.cpp": {
+                "type": "file",
+                "path": "pointers/smartPointers/sharedPtr/implementation.cpp",
+                "extension": "cpp"
+              }
+            }
+          },
+          "uniquePtr": {
+            "type": "folder",
+            "children": {
+              "basic_use.cpp": {
+                "type": "file",
+                "path": "pointers/smartPointers/uniquePtr/basic_use.cpp",
+                "extension": "cpp"
+              },
+              "implementation.cpp": {
+                "type": "file",
+                "path": "pointers/smartPointers/uniquePtr/implementation.cpp",
+                "extension": "cpp"
+              }
+            }
+          },
+          "weakPtr": {
+            "type": "folder",
+            "children": {
+              "circular_link.cpp": {
+                "type": "file",
+                "path": "pointers/smartPointers/weakPtr/circular_link.cpp",
+                "extension": "cpp"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "RAII": {
+    "type": "folder",
+    "children": {
+      "basic_use.cpp": {
+        "type": "file",
+        "path": "RAII/basic_use.cpp",
+        "extension": "cpp"
+      }
+    }
+  },
+  "sorting": {
+    "type": "folder",
+    "children": {
+      "bubble_sort.cpp": {
+        "type": "file",
+        "path": "sorting/bubble_sort.cpp",
+        "extension": "cpp"
+      },
+      "countSort": {
+        "type": "file",
+        "path": "sorting/countSort",
+        "extension": ""
+      },
+      "countSort.cpp": {
+        "type": "file",
+        "path": "sorting/countSort.cpp",
+        "extension": "cpp"
+      },
+      "insertion_sort.cpp": {
+        "type": "file",
+        "path": "sorting/insertion_sort.cpp",
+        "extension": "cpp"
+      },
+      "mergeSort": {
+        "type": "file",
+        "path": "sorting/mergeSort",
+        "extension": ""
+      },
+      "mergeSort.cpp": {
+        "type": "file",
+        "path": "sorting/mergeSort.cpp",
+        "extension": "cpp"
+      },
+      "quick_sort.cpp": {
+        "type": "file",
+        "path": "sorting/quick_sort.cpp",
+        "extension": "cpp"
+      },
+      "quickSort": {
+        "type": "file",
+        "path": "sorting/quickSort",
+        "extension": ""
+      },
+      "quickSort.cpp": {
+        "type": "file",
+        "path": "sorting/quickSort.cpp",
+        "extension": "cpp"
+      }
+    }
+  },
+  "storage_classes": {
+    "type": "folder",
+    "children": {
+      "externUse.cpp": {
+        "type": "file",
+        "path": "storage_classes/externUse.cpp",
+        "extension": "cpp"
+      },
+      "useCase.cpp": {
+        "type": "file",
+        "path": "storage_classes/useCase.cpp",
+        "extension": "cpp"
+      }
+    }
+  },
+  "String": {
+    "type": "folder",
+    "children": {
+      "basic_use.cpp": {
+        "type": "file",
+        "path": "String/basic_use.cpp",
+        "extension": "cpp"
+      },
+      "implementation.cpp": {
+        "type": "file",
+        "path": "String/implementation.cpp",
+        "extension": "cpp"
+      }
+    }
+  }
+}
