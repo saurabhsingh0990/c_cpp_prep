@@ -2,8 +2,7 @@ class CodeBrowser {
     constructor() {
         this.currentFile = null;
         this.fileTree = null;
-        this.baseUrl = window.location.hostname === 'localhost' ? 
-            '' : `https://raw.githubusercontent.com/${this.getRepoPath()}/main`;
+        this.baseUrl = '';
         
         this.init();
     }
@@ -33,12 +32,13 @@ class CodeBrowser {
     }
 
     async loadFileTree() {
-        const response = await fetch(`${this.baseUrl}/fileTree.json`);
-        if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-        }
-        this.fileTree = await response.json();
+    const response = await fetch(`./fileTree.json`);  // Use relative path
+    if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
     }
+    this.fileTree = await response.json();
+}
+
 
     renderFileTree() {
         const container = document.getElementById('file-tree');
@@ -92,8 +92,7 @@ class CodeBrowser {
             codeContent.textContent = 'Loading...';
             copyBtn.style.display = 'none';
 
-            // Fetch file content
-            const response = await fetch(`${this.baseUrl}/${filePath}`);
+            const response = await fetch(`https://raw.githubusercontent.com/saurabhsingh0990/c_cpp_prep/main/${filePath}`);
             if (!response.ok) {
                 throw new Error(`Failed to load file: ${response.status}`);
             }
