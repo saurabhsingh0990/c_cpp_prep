@@ -92,13 +92,20 @@ class CodeBrowser {
         codeContent.textContent = 'Loading...';
         copyBtn.style.display = 'none';
 
-        // Fetch file content - NOTE: using 'master' branch, not 'main'
-        const response = await fetch(`https://raw.githubusercontent.com/saurabhsingh0990/c_cpp_prep/master/${filePath}`);
+        // Use GitHub Contents API (more reliable than raw URLs)
+        const apiUrl = `https://api.github.com/repos/saurabhsingh0990/c_cpp_prep/contents/${filePath}`;
+        console.log('Fetching from API:', apiUrl);
+        
+        const response = await fetch(apiUrl);
+        
         if (!response.ok) {
-            throw new Error(`Failed to load file: ${response.status}`);
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
 
-        const content = await response.text();
+        const data = await response.json();
+        
+        // GitHub API returns base64 encoded content
+        const content = atob(data.content);
         const extension = this.getFileExtension(filePath);
 
         // Update UI
@@ -118,6 +125,7 @@ class CodeBrowser {
         this.showError(`Failed to load ${filePath}: ${error.message}`);
     }
 }
+
 
 
     getFileExtension(filePath) {
