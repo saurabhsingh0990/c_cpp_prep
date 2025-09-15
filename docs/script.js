@@ -77,46 +77,48 @@ class CodeBrowser {
     }
 
     async loadFile(filePath, element) {
-        try {
-            // Update active state
-            document.querySelectorAll('.tree-file').forEach(el => el.classList.remove('active'));
-            element.classList.add('active');
+    try {
+        // Update active state
+        document.querySelectorAll('.tree-file').forEach(el => el.classList.remove('active'));
+        element.classList.add('active');
 
-            // Show loading
-            const codeContent = document.getElementById('code-content');
-            const codeDisplay = document.getElementById('code-display');
-            const currentFileEl = document.getElementById('current-file');
-            const copyBtn = document.getElementById('copy-btn');
+        // Show loading
+        const codeContent = document.getElementById('code-content');
+        const codeDisplay = document.getElementById('code-display');
+        const currentFileEl = document.getElementById('current-file');
+        const copyBtn = document.getElementById('copy-btn');
 
-            currentFileEl.textContent = `Loading ${filePath}...`;
-            codeContent.textContent = 'Loading...';
-            copyBtn.style.display = 'none';
+        currentFileEl.textContent = `Loading ${filePath}...`;
+        codeContent.textContent = 'Loading...';
+        copyBtn.style.display = 'none';
 
-            const response = await fetch(`https://raw.githubusercontent.com/saurabhsingh0990/c_cpp_prep/main/${filePath}`);
-            if (!response.ok) {
-                throw new Error(`Failed to load file: ${response.status}`);
-            }
-
-            const content = await response.text();
-            const extension = this.getFileExtension(filePath);
-
-            // Update UI
-            currentFileEl.textContent = filePath;
-            codeContent.textContent = content;
-            
-            // Apply syntax highlighting
-            codeDisplay.className = `language-${this.mapExtensionToLanguage(extension)}`;
-            Prism.highlightElement(codeContent);
-
-            // Show copy button
-            copyBtn.style.display = 'block';
-            this.currentFile = { path: filePath, content };
-
-        } catch (error) {
-            console.error('Error loading file:', error);
-            this.showError(`Failed to load ${filePath}: ${error.message}`);
+        // Fetch file content - NOTE: using 'master' branch, not 'main'
+        const response = await fetch(`https://raw.githubusercontent.com/saurabhsingh0990/c_cpp_prep/master/${filePath}`);
+        if (!response.ok) {
+            throw new Error(`Failed to load file: ${response.status}`);
         }
+
+        const content = await response.text();
+        const extension = this.getFileExtension(filePath);
+
+        // Update UI
+        currentFileEl.textContent = filePath;
+        codeContent.textContent = content;
+        
+        // Apply syntax highlighting
+        codeDisplay.className = `language-${this.mapExtensionToLanguage(extension)}`;
+        Prism.highlightElement(codeContent);
+
+        // Show copy button
+        copyBtn.style.display = 'block';
+        this.currentFile = { path: filePath, content };
+
+    } catch (error) {
+        console.error('Error loading file:', error);
+        this.showError(`Failed to load ${filePath}: ${error.message}`);
     }
+}
+
 
     getFileExtension(filePath) {
         return filePath.split('.').pop().toLowerCase();
