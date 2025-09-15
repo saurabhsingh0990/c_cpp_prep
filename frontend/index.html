@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C/C++ Prep Repository</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>C/C++ Preparation Repository</h1>
+        <p>Interactive code browser for C/C++ concepts and implementations</p>
+    </header>
+    
+    <div class="container">
+        <div class="sidebar">
+            <h3>Directory Structure</h3>
+            <div id="file-tree"></div>
+        </div>
+        
+        <div class="main-content">
+            <div class="file-header">
+                <h3 id="current-file">Select a file to view</h3>
+                <button id="copy-btn" class="copy-button" style="display: none;">Copy Code</button>
+            </div>
+            <div class="code-container">
+                <pre id="code-display"><code id="code-content">Welcome to your C/C++ prep repository!
+                
+Select any file from the directory tree on the left to view its contents.
+
+Features:
+- Syntax highlighting for C/C++ code
+- Responsive design
+- Copy to clipboard functionality
+- Auto-updating file tree via GitHub Actions</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+name: Generate File Tree
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  generate-tree:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Generate file tree JSON
+      run: |
+        python3 << 'EOF' > fileTree.json
+        import os
+        import json
+        
+        def build_tree(directory):
+            tree = {}
+            
+            try:
+                for item in sorted(os.listdir(directory)):
+                    if item.startswith('.') or item == 'frontend' or item == 'fileTree.json':
+                        continue
+                        
+                    item_path = os.path.join(directory, item)
+                    
+                    if os.path.isdir(item_path):
+                        tree[item] = {
+                            "type": "folder",
+                            "children": build_tree(item_path)
+                        }
+                    else:
+                        tree[item] = {
+                            "type": "file",
+                            "path": item_path,
+                            "extension": os.path.splitext(item)[1][1:] if '.' in item else ""
+                        }
+            except PermissionError:
+                pass
+                
+            return tree
+        
+        file_tree = build_tree(".")
+        print(json.dumps(file_tree, indent=2))
+        EOF
+    
+    - name: Commit file tree
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add fileTree.json
+        git diff --staged --quiet || git commit -m "Auto-update file tree"
+        git push
