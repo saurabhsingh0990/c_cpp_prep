@@ -308,5 +308,15 @@
         "extension": "cpp"
       }
     }
+  },
+  "test_automation": {
+    "type": "folder",
+    "children": {
+      "auto_test.cpp": {
+        "type": "file",
+        "path": "./test_automation/auto_test.cpp",
+        "extension": "cpp"
+      }
+    }
   }
 }
