@@ -32,13 +32,12 @@ class CodeBrowser {
     }
 
     async loadFileTree() {
-    const response = await fetch(`./fileTree.json`);  // Use relative path
+    const response = await fetch(`./fileTree.json?v=${Date.now()}`);
     if (!response.ok) {
         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
     }
     this.fileTree = await response.json();
 }
-
 
     renderFileTree() {
         const container = document.getElementById('file-tree');
