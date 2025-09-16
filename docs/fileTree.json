@@ -308,5 +308,15 @@
         "extension": "cpp"
       }
     }
+  },
+  "test_folder": {
+    "type": "folder",
+    "children": {
+      "test.cpp": {
+        "type": "file",
+        "path": "./test_folder/test.cpp",
+        "extension": "cpp"
+      }
+    }
   }
 }
