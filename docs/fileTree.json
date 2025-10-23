@@ -255,6 +255,16 @@
       "funcPtr": {
         "type": "folder",
         "children": {
+          "FSM_1": {
+            "type": "file",
+            "path": "./pointers/funcPtr/FSM_1",
+            "extension": ""
+          },
+          "FSM_1.cpp": {
+            "type": "file",
+            "path": "./pointers/funcPtr/FSM_1.cpp",
+            "extension": "cpp"
+          },
           "basic_use": {
             "type": "file",
             "path": "./pointers/funcPtr/basic_use",
