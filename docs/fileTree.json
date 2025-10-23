@@ -252,6 +252,21 @@
   "pointers": {
     "type": "folder",
     "children": {
+      "funcPtr": {
+        "type": "folder",
+        "children": {
+          "basic_use": {
+            "type": "file",
+            "path": "./pointers/funcPtr/basic_use",
+            "extension": ""
+          },
+          "basic_use.cpp": {
+            "type": "file",
+            "path": "./pointers/funcPtr/basic_use.cpp",
+            "extension": "cpp"
+          }
+        }
+      },
       "smartPointers": {
         "type": "folder",
         "children": {
