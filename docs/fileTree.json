@@ -265,6 +265,31 @@
             "path": "./pointers/funcPtr/FSM_1.cpp",
             "extension": "cpp"
           },
+          "FSMs": {
+            "type": "folder",
+            "children": {
+              "FSM_1": {
+                "type": "file",
+                "path": "./pointers/funcPtr/FSMs/FSM_1",
+                "extension": ""
+              },
+              "FSM_1.cpp": {
+                "type": "file",
+                "path": "./pointers/funcPtr/FSMs/FSM_1.cpp",
+                "extension": "cpp"
+              },
+              "FSM_2": {
+                "type": "file",
+                "path": "./pointers/funcPtr/FSMs/FSM_2",
+                "extension": ""
+              },
+              "FSM_2.cpp": {
+                "type": "file",
+                "path": "./pointers/funcPtr/FSMs/FSM_2.cpp",
+                "extension": "cpp"
+              }
+            }
+          },
           "basic_use": {
             "type": "file",
             "path": "./pointers/funcPtr/basic_use",
