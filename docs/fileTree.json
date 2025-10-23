@@ -36,6 +36,61 @@
         "type": "file",
         "path": "./String/implementation.cpp",
         "extension": "cpp"
+      },
+      "string_copy": {
+        "type": "file",
+        "path": "./String/string_copy",
+        "extension": ""
+      },
+      "string_copy.c": {
+        "type": "file",
+        "path": "./String/string_copy.c",
+        "extension": "c"
+      },
+      "string_copy.dSYM": {
+        "type": "folder",
+        "children": {
+          "Contents": {
+            "type": "folder",
+            "children": {
+              "Info.plist": {
+                "type": "file",
+                "path": "./String/string_copy.dSYM/Contents/Info.plist",
+                "extension": "plist"
+              },
+              "Resources": {
+                "type": "folder",
+                "children": {
+                  "DWARF": {
+                    "type": "folder",
+                    "children": {
+                      "string_copy": {
+                        "type": "file",
+                        "path": "./String/string_copy.dSYM/Contents/Resources/DWARF/string_copy",
+                        "extension": ""
+                      }
+                    }
+                  },
+                  "Relocations": {
+                    "type": "folder",
+                    "children": {
+                      "aarch64": {
+                        "type": "folder",
+                        "children": {
+                          "string_copy.yml": {
+                            "type": "file",
+                            "path": "./String/string_copy.dSYM/Contents/Resources/Relocations/aarch64/string_copy.yml",
+                            "extension": "yml"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
