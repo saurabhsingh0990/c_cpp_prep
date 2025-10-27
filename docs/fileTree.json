@@ -268,24 +268,24 @@
           "FSMs": {
             "type": "folder",
             "children": {
-              "FSM_1": {
+              "FSM_LTE_event_based": {
                 "type": "file",
-                "path": "./pointers/funcPtr/FSMs/FSM_1",
+                "path": "./pointers/funcPtr/FSMs/FSM_LTE_event_based",
                 "extension": ""
               },
-              "FSM_1.cpp": {
+              "FSM_LTE_event_based.cpp": {
                 "type": "file",
-                "path": "./pointers/funcPtr/FSMs/FSM_1.cpp",
+                "path": "./pointers/funcPtr/FSMs/FSM_LTE_event_based.cpp",
                 "extension": "cpp"
               },
-              "FSM_2": {
+              "FSM_LTE_sequential.cpp": {
                 "type": "file",
-                "path": "./pointers/funcPtr/FSMs/FSM_2",
-                "extension": ""
+                "path": "./pointers/funcPtr/FSMs/FSM_LTE_sequential.cpp",
+                "extension": "cpp"
               },
-              "FSM_2.cpp": {
+              "FSM_basic.cpp": {
                 "type": "file",
-                "path": "./pointers/funcPtr/FSMs/FSM_2.cpp",
+                "path": "./pointers/funcPtr/FSMs/FSM_basic.cpp",
                 "extension": "cpp"
               }
             }
