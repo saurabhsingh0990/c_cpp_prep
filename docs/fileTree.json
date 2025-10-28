@@ -252,19 +252,19 @@
   "pointers": {
     "type": "folder",
     "children": {
+      "const_ptr_const": {
+        "type": "file",
+        "path": "./pointers/const_ptr_const",
+        "extension": ""
+      },
+      "const_ptr_const.cpp": {
+        "type": "file",
+        "path": "./pointers/const_ptr_const.cpp",
+        "extension": "cpp"
+      },
       "funcPtr": {
         "type": "folder",
         "children": {
-          "FSM_1": {
-            "type": "file",
-            "path": "./pointers/funcPtr/FSM_1",
-            "extension": ""
-          },
-          "FSM_1.cpp": {
-            "type": "file",
-            "path": "./pointers/funcPtr/FSM_1.cpp",
-            "extension": "cpp"
-          },
           "FSMs": {
             "type": "folder",
             "children": {
