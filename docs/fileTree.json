@@ -299,6 +299,41 @@
             "type": "file",
             "path": "./pointers/funcPtr/basic_use.cpp",
             "extension": "cpp"
+          },
+          "callbacks": {
+            "type": "folder",
+            "children": {
+              "basic_use": {
+                "type": "file",
+                "path": "./pointers/funcPtr/callbacks/basic_use",
+                "extension": ""
+              },
+              "basic_use.cpp": {
+                "type": "file",
+                "path": "./pointers/funcPtr/callbacks/basic_use.cpp",
+                "extension": "cpp"
+              },
+              "lte_attach": {
+                "type": "file",
+                "path": "./pointers/funcPtr/callbacks/lte_attach",
+                "extension": ""
+              },
+              "lte_attach.cpp": {
+                "type": "file",
+                "path": "./pointers/funcPtr/callbacks/lte_attach.cpp",
+                "extension": "cpp"
+              },
+              "music_player": {
+                "type": "file",
+                "path": "./pointers/funcPtr/callbacks/music_player",
+                "extension": ""
+              },
+              "music_player.cpp": {
+                "type": "file",
+                "path": "./pointers/funcPtr/callbacks/music_player.cpp",
+                "extension": "cpp"
+              }
+            }
           }
         }
       },
