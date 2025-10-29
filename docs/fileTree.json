@@ -262,6 +262,16 @@
         "path": "./pointers/const_ptr_const.cpp",
         "extension": "cpp"
       },
+      "dangling_wild_ptr": {
+        "type": "file",
+        "path": "./pointers/dangling_wild_ptr",
+        "extension": ""
+      },
+      "dangling_wild_ptr.cpp": {
+        "type": "file",
+        "path": "./pointers/dangling_wild_ptr.cpp",
+        "extension": "cpp"
+      },
       "funcPtr": {
         "type": "folder",
         "children": {
