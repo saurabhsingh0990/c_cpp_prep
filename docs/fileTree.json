@@ -129,6 +129,31 @@
       }
     }
   },
+  "dynamic_memory": {
+    "type": "folder",
+    "children": {
+      "calloc": {
+        "type": "file",
+        "path": "./dynamic_memory/calloc",
+        "extension": ""
+      },
+      "calloc.cpp": {
+        "type": "file",
+        "path": "./dynamic_memory/calloc.cpp",
+        "extension": "cpp"
+      },
+      "malloc": {
+        "type": "file",
+        "path": "./dynamic_memory/malloc",
+        "extension": ""
+      },
+      "malloc.cpp": {
+        "type": "file",
+        "path": "./dynamic_memory/malloc.cpp",
+        "extension": "cpp"
+      }
+    }
+  },
   "friend": {
     "type": "folder",
     "children": {
