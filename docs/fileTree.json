@@ -142,6 +142,16 @@
         "path": "./dynamic_memory/calloc.cpp",
         "extension": "cpp"
       },
+      "calloc_vs_malloc": {
+        "type": "file",
+        "path": "./dynamic_memory/calloc_vs_malloc",
+        "extension": ""
+      },
+      "calloc_vs_malloc.cpp": {
+        "type": "file",
+        "path": "./dynamic_memory/calloc_vs_malloc.cpp",
+        "extension": "cpp"
+      },
       "malloc": {
         "type": "file",
         "path": "./dynamic_memory/malloc",
@@ -150,6 +160,46 @@
       "malloc.cpp": {
         "type": "file",
         "path": "./dynamic_memory/malloc.cpp",
+        "extension": "cpp"
+      },
+      "memcopy": {
+        "type": "file",
+        "path": "./dynamic_memory/memcopy",
+        "extension": ""
+      },
+      "memcopy.cpp": {
+        "type": "file",
+        "path": "./dynamic_memory/memcopy.cpp",
+        "extension": "cpp"
+      },
+      "memmove": {
+        "type": "file",
+        "path": "./dynamic_memory/memmove",
+        "extension": ""
+      },
+      "memory_leak": {
+        "type": "file",
+        "path": "./dynamic_memory/memory_leak",
+        "extension": ""
+      },
+      "memory_leak.cpp": {
+        "type": "file",
+        "path": "./dynamic_memory/memory_leak.cpp",
+        "extension": "cpp"
+      },
+      "memove.cpp": {
+        "type": "file",
+        "path": "./dynamic_memory/memove.cpp",
+        "extension": "cpp"
+      },
+      "memset_example": {
+        "type": "file",
+        "path": "./dynamic_memory/memset_example",
+        "extension": ""
+      },
+      "memset_example.cpp": {
+        "type": "file",
+        "path": "./dynamic_memory/memset_example.cpp",
         "extension": "cpp"
       }
     }
