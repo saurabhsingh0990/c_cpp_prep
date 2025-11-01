@@ -37,6 +37,16 @@
         "path": "./String/implementation.cpp",
         "extension": "cpp"
       },
+      "string_basic": {
+        "type": "file",
+        "path": "./String/string_basic",
+        "extension": ""
+      },
+      "string_basic.cpp": {
+        "type": "file",
+        "path": "./String/string_basic.cpp",
+        "extension": "cpp"
+      },
       "string_copy": {
         "type": "file",
         "path": "./String/string_copy",
@@ -46,51 +56,6 @@
         "type": "file",
         "path": "./String/string_copy.c",
         "extension": "c"
-      },
-      "string_copy.dSYM": {
-        "type": "folder",
-        "children": {
-          "Contents": {
-            "type": "folder",
-            "children": {
-              "Info.plist": {
-                "type": "file",
-                "path": "./String/string_copy.dSYM/Contents/Info.plist",
-                "extension": "plist"
-              },
-              "Resources": {
-                "type": "folder",
-                "children": {
-                  "DWARF": {
-                    "type": "folder",
-                    "children": {
-                      "string_copy": {
-                        "type": "file",
-                        "path": "./String/string_copy.dSYM/Contents/Resources/DWARF/string_copy",
-                        "extension": ""
-                      }
-                    }
-                  },
-                  "Relocations": {
-                    "type": "folder",
-                    "children": {
-                      "aarch64": {
-                        "type": "folder",
-                        "children": {
-                          "string_copy.yml": {
-                            "type": "file",
-                            "path": "./String/string_copy.dSYM/Contents/Resources/Relocations/aarch64/string_copy.yml",
-                            "extension": "yml"
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
       }
     }
   },
