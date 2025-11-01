@@ -508,5 +508,20 @@
         "extension": "cpp"
       }
     }
+  },
+  "threading": {
+    "type": "folder",
+    "children": {
+      "basic_example": {
+        "type": "file",
+        "path": "./threading/basic_example",
+        "extension": ""
+      },
+      "basic_example.cpp": {
+        "type": "file",
+        "path": "./threading/basic_example.cpp",
+        "extension": "cpp"
+      }
+    }
   }
 }
